@@ -37,7 +37,7 @@ describe('SignUp' , () => {
       it('Signup With Email Not Exist and Password Correct' , ()=> {
         cy.url().should('eq' , 'https://test.fullsession.io/registration');
         cy.wait(2000);
-        cy.get(':nth-child(1) > .fs-form-control').clear().type("nohathaher29@gmail.com");
+        cy.get(':nth-child(1) > .fs-form-control').clear().type("nohathaher2000@gmail.com");
         cy.wait(1000);
         cy.get(':nth-child(2) > .fs-form-control').clear().type("test@FS21");
         cy.wait(1000);
