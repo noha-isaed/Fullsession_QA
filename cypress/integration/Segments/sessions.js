@@ -70,7 +70,7 @@ describe('Session Playlist Card' , () => {
             cy.get('.container > .meta').should('include.text' , '1-1 of 1 People');
             cy.get('fs-play-border > svg').should('be.visible').click();
 
-            cy.wait(7000)
+            cy.wait(10000)
             cy.url().should('include', text.trim()) 
             cy.get('.back').should('be.visible').click();
             cy.wait(20000)
